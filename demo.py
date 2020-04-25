@@ -171,12 +171,12 @@ def main(_):
 
     # Load and resize input image
     image = scp.misc.imread(input_image)
-    if hypes['jitter']['reseize_image']:
-        # Resize input only, if specified in hypes
-        image_height = hypes['jitter']['image_height']
-        image_width = hypes['jitter']['image_width']
-        image = scp.misc.imresize(image, size=(image_height, image_width),
-                                  interp='cubic')
+#     if hypes['jitter']['reseize_image']:
+#         # Resize input only, if specified in hypes
+#         image_height = hypes['jitter']['image_height']
+#         image_width = hypes['jitter']['image_width']
+#         image = scp.misc.imresize(image, size=(image_height, image_width),
+#                                   interp='cubic')
 
     # Run KittiSeg model on image
     feed = {image_pl: image}
