@@ -184,12 +184,12 @@ def main(_):
     from timeit import default_timer as timer
     
     start = timer()
-    for i in range(101):
+    for i in range(11):
         if i==1:
             start = timer()
         output = sess.run([softmax], feed_dict=feed)
     end = timer()
-    print((end - start)/100 )
+    print((end - start)/10 )
     # Reshape output from flat vector to 2D Image
     shape = image.shape
     output_image = output[0][:, 1].reshape(shape[0], shape[1])
@@ -238,6 +238,6 @@ def main(_):
     logging.warning("https://github.com/MarvinTeichmann/KittiBox/"
                     "issues/15#issuecomment-301800058")
 
-    print((end - start)/100 )
+    print((end - start)/10 )
 if __name__ == '__main__':
     tf.app.run()
