@@ -239,5 +239,7 @@ def main(_):
                     "issues/15#issuecomment-301800058")
 
     print((end - start)/10 )
+    print(logdir)
+    print(hypes)
 if __name__ == '__main__':
     tf.app.run()
