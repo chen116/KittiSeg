@@ -184,7 +184,7 @@ def main(_):
     from timeit import default_timer as timer
     
     start = timer()
-    for i in range(10):
+    for i in range(1):
         if i==1:
             start = timer()
         output = sess.run([softmax], feed_dict=feed)
