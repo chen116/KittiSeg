@@ -2,6 +2,8 @@ mkdir vicruns
 export TV_DIR_DATA=$(pwd)/vicruns
 export TV_DIR_DATA=$(pwd)/vicdata
 mkdir vicdata
+export TV_DIR_DATA=$(pwd)/vicdata
+export TV_PLUGIN_DIR=$(pwd)/tv-plugins
 
 
 
