@@ -1,3 +1,11 @@
+mkdir vicruns
+export TV_DIR_DATA=$(pwd)/vicruns
+export TV_DIR_DATA=$(pwd)/vicdata
+mkdir vicdata
+
+
+
+
 # KittiSeg
 
 KittiSeg performs segmentation of roads by utilizing an FCN based model. The model achieved [first place](http://www.cvlibs.net/datasets/kitti/eval_road_detail.php?result=ca96b8137feb7a636f3d774c408b1243d8a6e0df) on the Kitti Road Detection Benchmark at submission time. Check out our [paper](https://arxiv.org/abs/1612.07695) for a detailed model description.
